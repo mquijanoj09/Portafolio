@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="min-h-screen relative bg-black flex items-center justify-center overflow-hidden">
+    <div className="min-h-screen relative flex items-center justify-center overflow-hidden">
       {/* Cool Grid Background */}
       <div
         className="absolute inset-0"
@@ -27,7 +27,7 @@ export function Hero() {
         }}
       />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <section className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export function Hero() {
             </Button>
           </motion.div>
         </motion.div>
-      </div>
+      </section>
     </div>
   );
 }
