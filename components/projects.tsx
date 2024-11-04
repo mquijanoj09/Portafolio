@@ -7,30 +7,49 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const projects = [
+type Proyect = {
+  title: string;
+  image: string;
+  technologies: string[];
+  link: string;
+  description: string;
+};
+
+const projects: Proyect[] = [
+  {
+    title: "ReTickets",
+    image: "/retickets.png",
+    technologies: ["TypeScript", "React", "NextJS", "Supabase", "shadcn/ui"],
+    link: "#",
+    description: "Ticketing platform for events",
+  },
   {
     title: "No Register Brand",
-    image: "/hero.jpg",
+    image: "/noregister.png",
     technologies: ["TypeScript", "React", "NextJS", "Hygraph", "TailwindCSS"],
     link: "https://www.noregister.com/",
+    description: "Colombian clothing brand website",
   },
   {
     title: "Soporte S.A.",
-    image: "/hero.jpg",
+    image: "/soporte.png",
     technologies: ["TypeScript", "React", "NextJS", "TailwindCSS"],
     link: "https://www.soporte.com.co/",
+    description: "Services company website",
   },
   {
     title: "SABA",
-    image: "/hero.jpg",
+    image: "/saba.png",
     technologies: ["TypeScript", "React", "NextJS", "Supabase", "shadcn/ui"],
     link: "https://saba-dun.vercel.app/",
+    description: "Fair trade marketplace.",
   },
   {
     title: "UPBuen Viaje",
-    image: "/hero.jpg",
+    image: "/upbuenviaje.png",
     technologies: ["TypeScript", "React", "NextJS", "Firebase", "TailwindCSS"],
     link: "https://upbuen-viaje.vercel.app/",
+    description: "Ridding platform for students",
   },
 ];
 
@@ -58,7 +77,7 @@ export function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary"
         >
           My portfolio
         </motion.h2>
@@ -90,7 +109,7 @@ export function Projects() {
       >
         {projects.map((project) => (
           <motion.div key={project.title} variants={item}>
-            <Card className="bg-secondary/5 backdrop-blur-sm border-primary/10 overflow-hidden group">
+            <Card className="bg-secondary/5 backdrop-blur-sm border-primary/20 overflow-hidden group">
               <CardContent className="p-0">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Link href={project.link}>
@@ -104,9 +123,14 @@ export function Projects() {
                 </div>
                 <div className="p-6 space-y-4">
                   <div className="flex justify-between items-start">
-                    <h3 className="text-xl font-semibold text-secondary">
-                      {project.title}
-                    </h3>
+                    <div>
+                      <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-secondary">
+                        {project.title}
+                      </h3>
+                      <h4 className="text-xs lg:text-sm text-secondary/70">
+                        {project.description}
+                      </h4>
+                    </div>
                     <Link href={project.link}>
                       <Button
                         size="icon"

@@ -47,7 +47,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-secondary"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-secondary"
           >
             <span>Innovative </span>
             <div className="whitespace-nowrap">
@@ -66,8 +66,9 @@ export function Hero() {
           >
             <Avatar className="w-16 h-16 border-2 border-primary">
               <AvatarImage
-                src="https://avatars.githubusercontent.com/u/88918511?v=4"
+                src="/avatar.jpg"
                 alt="Miguel Quijano"
+                className="object-cover"
               />
               <AvatarFallback>MQ</AvatarFallback>
             </Avatar>

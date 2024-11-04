@@ -68,10 +68,10 @@ export function Technologies() {
         viewport={{ once: true }}
         className="space-y-4 mb-16"
       >
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary">
           Current technologies
         </h2>
-        <p className="text-secondary/70 text-xs sm:text-sm md:text-base max-w-3xl">
+        <p className="text-secondary/70 text-sm sm:text-base md:text-lg max-w-3xl">
           {`I'm proficient in a range of modern technologies that empower me to
             build highly functional solutions. These are some of my main
             technologies.`}
