@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: 0 0% 100%;
+  --foreground: 166.36 100% 4.31%;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --primary: 165.75 100% 42.94%;
+  --primary-foreground: 166.36 100% 4.31%;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --card: 169.09 73.33% 97.06%;
+  --card-foreground: 166.36 100% 4.31%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 166.36 100% 4.31%;
+
+  --secondary: 165.45 76.74% 91.57%;
+  --secondary-foreground: 0 0% 0%;
+
+  --muted: 165.71 72.41% 94.31%;
+  --muted-foreground: 0 0% 40%;
+
+  --accent: 165.71 72.41% 94.31%;
+  --accent-foreground: 165.45 100% 6.47%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 165 75.86% 88.63%;
+  --input: 165 28% 80.39%;
+  --ring: 165.75 100% 42.94%;
+
+  --chart-1: 165.75 100% 42.94%;
+  --chart-2: 165.81 75% 51.37%;
+  --chart-3: 165.73 75.66% 62.94%;
+  --chart-4: 166 75% 68.63%;
+  --chart-5: 165.45 75.57% 74.31%;
+
+  --radius: 0.5rem;
 }
