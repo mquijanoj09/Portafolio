@@ -60,7 +60,10 @@ const item = {
 
 export function Technologies() {
   return (
-    <section className="relative container mx-auto px-4 z-10">
+    <section
+      className="relative container mx-auto px-4 sm:px-6 md:px-8 py-10 z-10"
+      id="technologies"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

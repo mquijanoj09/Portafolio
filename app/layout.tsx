@@ -17,8 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta name="theme-color" content="#000000" />
+      </head>
       <body
-        className={`${inter.className} bg-background text-foreground antialiased`}
+        className={`${inter.className} bg-black text-foreground antialiased`}
       >
         <div className="flex flex-col min-h-screen">
           <main className="flex-grow">{children}</main>

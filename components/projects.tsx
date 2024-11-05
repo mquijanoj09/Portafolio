@@ -6,52 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-
-type Proyect = {
-  title: string;
-  image: string;
-  technologies: string[];
-  link: string;
-  description: string;
-};
-
-const projects: Proyect[] = [
-  {
-    title: "ReTickets",
-    image: "/retickets.png",
-    technologies: ["TypeScript", "React", "NextJS", "Supabase", "shadcn/ui"],
-    link: "#",
-    description: "Ticketing platform for events",
-  },
-  {
-    title: "No Register Brand",
-    image: "/noregister.png",
-    technologies: ["TypeScript", "React", "NextJS", "Hygraph", "TailwindCSS"],
-    link: "https://www.noregister.com/",
-    description: "Colombian clothing brand website",
-  },
-  {
-    title: "Soporte S.A.",
-    image: "/soporte.png",
-    technologies: ["TypeScript", "React", "NextJS", "TailwindCSS"],
-    link: "https://www.soporte.com.co/",
-    description: "Services company website",
-  },
-  {
-    title: "SABA",
-    image: "/saba.png",
-    technologies: ["TypeScript", "React", "NextJS", "Supabase", "shadcn/ui"],
-    link: "https://saba-dun.vercel.app/",
-    description: "Fair trade marketplace.",
-  },
-  {
-    title: "UPBuen Viaje",
-    image: "/upbuenviaje.png",
-    technologies: ["TypeScript", "React", "NextJS", "Firebase", "TailwindCSS"],
-    link: "https://upbuen-viaje.vercel.app/",
-    description: "Ridding platform for students",
-  },
-];
+import { projects } from "@/data/projects";
 
 const container = {
   hidden: { opacity: 0 },
@@ -70,7 +25,10 @@ const item = {
 
 export function Projects() {
   return (
-    <section className="relative container mx-auto px-4 z-10">
+    <section
+      className="relative container mx-auto px-4 sm:px-6 md:px-8 z-10 py-10"
+      id="projects"
+    >
       <div className="flex justify-between items-center mb-16">
         <motion.h2
           initial={{ opacity: 0, x: -20 }}
@@ -146,7 +104,7 @@ export function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary/70"
+                        className="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary"
                       >
                         {tech}
                       </span>

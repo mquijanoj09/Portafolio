@@ -7,8 +7,21 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 
 export function Hero() {
+  const downloadCv = () => {
+    const pdfUrl = "/Miguel_Quijano_CV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Miguel_Quijano_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="min-h-screen relative flex items-center justify-center overflow-hidden">
+    <div
+      className="min-h-screen relative flex items-center justify-center overflow-hidden"
+      id="home"
+    >
       {/* Cool Grid Background */}
       <div
         className="absolute inset-0"
@@ -27,7 +40,7 @@ export function Hero() {
         }}
       />
 
-      <section className="container mx-auto px-4 relative z-10">
+      <section className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,12 +98,16 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button asChild variant="shine" size="lg" className="group">
-              <Link href="#work">
+              <Link href="#projects">
                 See My Work
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
-            <Button variant="linkHover2" className="text-primary">
+            <Button
+              variant="linkHover2"
+              className="text-primary"
+              onClick={downloadCv}
+            >
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </Button>
