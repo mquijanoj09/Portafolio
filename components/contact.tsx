@@ -52,7 +52,14 @@ export function Contact() {
             </Link>{" "}
             to collaborate!
           </h2>
-          <Button size="lg">Schedule call</Button>
+          <Button size="lg" asChild>
+            <Link
+              href="mailto:mquijanoj@hotmail.com"
+              className="text-primary hover:underline underline-offset-4"
+            >
+              Schedule call
+            </Link>
+          </Button>
         </motion.div>
 
         <motion.div

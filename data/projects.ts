@@ -1,15 +1,15 @@
 import { Proyect } from "@/types/project";
 
 export const projects: Proyect[] = [
+  // {
+  //   title: "ReTickets",
+  //   image: "/retickets.png",
+  //   technologies: ["TypeScript", "React", "NextJS", "Supabase", "shadcn/ui"],
+  //   link: "https://www.retickets.com.co/",
+  //   description: "Ticketing platform for events",
+  // },
   {
-    title: "ReTickets",
-    image: "/retickets.png",
-    technologies: ["TypeScript", "React", "NextJS", "Supabase", "shadcn/ui"],
-    link: "#",
-    description: "Ticketing platform for events",
-  },
-  {
-    title: "No Register Brand",
+    title: "No Register",
     image: "/noregister.png",
     technologies: ["TypeScript", "React", "NextJS", "Hygraph", "TailwindCSS"],
     link: "https://www.noregister.com/",
