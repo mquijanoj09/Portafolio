@@ -10,7 +10,7 @@ export const projects: Proyect[] = [
   // },
   {
     title: "No Register",
-    image: "/noregister.png",
+    image: "/noregisterbrand.png",
     technologies: ["TypeScript", "React", "NextJS", "Hygraph", "TailwindCSS"],
     link: "https://www.noregister.com/",
     description: "Colombian clothing brand website",
@@ -27,7 +27,7 @@ export const projects: Proyect[] = [
     image: "/saba.png",
     technologies: ["TypeScript", "React", "NextJS", "Supabase", "shadcn/ui"],
     link: "https://saba-dun.vercel.app/",
-    description: "Fair trade marketplace.",
+    description: "Fair trade marketplace",
   },
   {
     title: "UPBuen Viaje",
