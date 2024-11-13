@@ -40,7 +40,7 @@ export function Hero() {
         }}
       />
 
-      <section className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
+      <section className="mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,15 +60,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-secondary"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-secondary xs:text-5xl"
           >
-            <span>Innovative </span>
-            <div className="whitespace-nowrap">
-              <span className="text-primary">Web Solutions</span>
-              <span> & </span>
-            </div>
-            <span>Quality </span>
-            <span className="text-primary">Design</span>
+            Innovative
+            <br />
+            <span className="text-primary">Web&nbsp;Solutions</span>
+            <br />
+            &&nbsp;Quality&nbsp;<span className="text-primary">Design</span>
           </motion.h1>
 
           <motion.div
